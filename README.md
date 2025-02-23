@@ -17,4 +17,13 @@ Features:
 **Profitability Analysis:** Visualization of profit margins by product category and location to optimize pricing and promotional strategies.
 
 
+![Sales Sales Insights ΓÇô Brick   motor business-images-2](https://github.com/user-attachments/assets/e2d83817-3dc6-48f2-a2b6-777622c28552)
+
+
+![Sales Sales Insights ΓÇô Brick   motor business-images-1](https://github.com/user-attachments/assets/843391ce-82ff-44f8-9318-bf9cfc335d97)
+
+
+
+![Sales Sales Insights ΓÇô Brick   motor business-images-0](https://github.com/user-attachments/assets/56cd6470-40d6-4118-a60f-70323d183432)
+
 

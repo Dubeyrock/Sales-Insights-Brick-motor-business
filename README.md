@@ -1,58 +1,20 @@
 ## Sales Insights Data Analysis Project
 
-### Instructions to setup mysql on your local computer
 
-1. Follow step in this video to install mysql on your local computer
-https://www.youtube.com/watch?v=WuBcTJnIuzo
+Problem Statement:
+AtliQ, a hardware goods retailer, struggled to understand their sales trends, leading to missed revenue opportunities and inefficient decision-making. They needed a data-driven approach to identify sales patterns, optimize inventory, and implement targeted marketing strategies to increase revenue.
 
-1. SQL database dump is in db_dump.sql file above. Download `db_dump.sql` file to your local computer and import it as per instructions given in the tutorial video
+Features:
 
-### Data Analysis Using SQL
+**Sales Trend Analysis:** Interactive visualizations to track sales performance over time, helping to identify peak sales periods and seasonal trends.
 
-1. Show all customer records
+**Product Performance Insights:** Detailed breakdown of product categories and individual item sales, enabling targeted marketing and inventory management.
 
-    `SELECT * FROM customers;`
+**Customer Segmentation:** Analysis of customer buying patterns to identify high-value customers and tailor marketing strategies accordingly.
 
-1. Show total number of customers
+**Revenue Forecasting:** Predictive analytics to estimate future revenue growth based on historical sales data.
 
-    `SELECT count(*) FROM customers;`
-
-1. Show transactions for Chennai market (market code for chennai is Mark001
-
-    `SELECT * FROM transactions where market_code='Mark001';`
-
-1. Show distrinct product codes that were sold in chennai
-
-    `SELECT distinct product_code FROM transactions where market_code='Mark001';`
-
-1. Show transactions where currency is US dollars
-
-    `SELECT * from transactions where currency="USD"`
-
-1. Show transactions in 2020 join by date table
-
-    `SELECT transactions.*, date.* FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020;`
-
-1. Show total revenue in year 2020,
-
-    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.currency="INR\r" or transactions.currency="USD\r";`
-	
-1. Show total revenue in year 2020, January Month,
-
-    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and and date.month_name="January" and (transactions.currency="INR\r" or transactions.currency="USD\r");`
-
-1. Show total revenue in year 2020 in Chennai
-
-    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020
-and transactions.market_code="Mark001";`
-
-
-Data Analysis Using Power BI
-============================
-
-1. Formula to create norm_amount column
-
-`= Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount], type any)`
+**Profitability Analysis:** Visualization of profit margins by product category and location to optimize pricing and promotional strategies.
 
 
 

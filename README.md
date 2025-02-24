@@ -4,7 +4,7 @@
 Problem Statement:
 AtliQ, a hardware goods retailer, struggled to understand their sales trends, leading to missed revenue opportunities and inefficient decision-making. They needed a data-driven approach to identify sales patterns, optimize inventory, and implement targeted marketing strategies to increase revenue.
 
-Features:
+**Features:**
 
 **Sales Trend Analysis:** Interactive visualizations to track sales performance over time, helping to identify peak sales periods and seasonal trends.
 

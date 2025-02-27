@@ -1,7 +1,7 @@
-## Sales Insights Data Analysis Project
+## Sales Insights Data Analysis Projects
 
 
-Problem Statement:
+## Problem Statement:
 AtliQ, a hardware goods retailer, struggled to understand their sales trends, leading to missed revenue opportunities and inefficient decision-making. They needed a data-driven approach to identify sales patterns, optimize inventory, and implement targeted marketing strategies to increase revenue.
 
 **Features:**
